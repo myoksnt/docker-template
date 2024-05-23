@@ -15,7 +15,7 @@ use App\Http\Controllers\ContactController;
 |
 */
 
-Route::get('/', function () {
+Route::get('/wecome', function () {
     return view('welcome');
 });
 Route::get('/', [TodoController::class, 'index']);
