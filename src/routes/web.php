@@ -2,7 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TodoController;
-use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,7 +14,5 @@ use App\Http\Controllers\ContactController;
 |
 */
 
-Route::get('/wecome', function () {
-    return view('welcome');
-});
+
 Route::get('/', [TodoController::class, 'index']);
